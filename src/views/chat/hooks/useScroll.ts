@@ -4,7 +4,7 @@ import { nextTick, ref } from 'vue'
 type ScrollElement = HTMLDivElement | null
 
 interface ScrollReturn {
-  scrollRef: Ref<ScrollElement>
+  scrollRef: Ref
   scrollToBottom: () => Promise<void>
   scrollToTop: () => Promise<void>
   scrollToBottomIfAtBottom: () => Promise<void>
